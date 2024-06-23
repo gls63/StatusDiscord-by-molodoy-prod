@@ -1,6 +1,6 @@
 
 const
-  CLIENT_ID = "Add your client id here",
+  CLIENT_ID = "1254457862168772688",
     
   express = require("express"),
   chalk = require("chalk"),
@@ -10,10 +10,8 @@ const
   { Client } = require('discord.js-selfbot-v11'),
   client = new Client(),
 
-  statuses = new Map([
-    [1, ["playing", chalk.yellowBright.bold]],
-    [2, ["listening", chalk.greenBright.bold]],
-    [3, ["streaming", chalk.magentaBright.bold]]
+  statuses = new Map(
+    [1, ["streaming", chalk.magentaBright.bold]]
   ]);
 
 dotenv.config();
